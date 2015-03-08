@@ -33,7 +33,7 @@ data <- read.table(datafile, header = TRUE, sep=";", na.strings="?", nrows = nro
 ## save plot to the PNG file
 png(filename = "plot1.png", width = 480, height = 480, units = "px", pointsize = 12, bg = "white",  res = NA)
 
-hist(data[,3],col="red",main="Global Active Power",xla="Global Active Power (kilowatts)")
+hist(data[,3],col="red",main="Global Active Power",xla=" Global Active Power (kilowatts)")
 
 dev.off() ## closing the device
 print("plot is saved in plot1.png file!")
