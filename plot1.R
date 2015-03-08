@@ -4,6 +4,7 @@
 ## source("plot1.R")
 ## plot1()
 ## Note that it may take some time as to complete the reading and plotting the graph
+
 ## The file household_power_consumption.txt is assumed to be in the working directory!
 
 plot1 <- function() {
@@ -38,4 +39,6 @@ dev.off() ## closing the device
 print("plot is saved in plot1.png file!")
 rm(list=ls())
 ## now the plot1.png file containing histogram must have been created.
+
+
 }
