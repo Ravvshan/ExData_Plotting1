@@ -1,9 +1,10 @@
 ## the following function plots histogram and saves it in plot1.png file.
+
 ## example to run this script
 ## source("plot1.R")
 ## plot1()
 ## Note that it may take some time as to complete the reading and plotting the graph
-
+## The file household_power_consumption.txt is assumed to be in the working directory!
 
 plot1 <- function() {
   datafile <- "./household_power_consumption.txt"
@@ -31,7 +32,7 @@ data <- read.table(datafile, header = TRUE, sep=";", na.strings="?", nrows = nro
 ## save plot to the PNG file
 png(filename = "plot1.png", width = 480, height = 480, units = "px", pointsize = 12, bg = "white",  res = NA)
 
-hist(data[,3],col="red",main="Global Active Power",xla="Global Active Power (kilowatts")
+hist(data[,3],col="red",main="Global Active Power",xla="Global Active Power (kilowatts)")
 
 dev.off() ## closing the device
 print("plot is saved in plot1.png file!")

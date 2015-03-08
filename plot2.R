@@ -1,9 +1,9 @@
-## the following function plots histogram and saves it in plot1.png file.
+## the following function plots a graph and saves it in plot2.png file.
 ## example to run this script
 ## source("plot2.R")
 ## plot2()
 ## Note that it may take some time as to complete the reading and plotting the graph
-
+## The file household_power_consumption.txt is assumed to be in the working directory!
 
 plot2 <- function() {
   library(dplyr)
