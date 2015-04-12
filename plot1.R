@@ -1,13 +1,10 @@
 ## the following function plots histogram and saves it in plot1.png file.
 
 ## example to run this script
-## source("plot1.R")
-## plot1()
+## Rscript plot1.R
 ## Note that it may take some time as to complete the reading and plotting the graph
-
 ## The file household_power_consumption.txt is assumed to be in the working directory!
 
-plot1 <- function() {
   datafile <- "./household_power_consumption.txt"
 ## just reading the head and first few rows to get column classess, which later helps to read whole datafile faster
   head5 <- read.table(datafile, header = TRUE, sep=";", na.strings="?", nrows = 5)
@@ -40,5 +37,3 @@ print("plot is saved in plot1.png file!")
 rm(list=ls())
 ## now the plot1.png file containing histogram must have been created.
 
-
-}

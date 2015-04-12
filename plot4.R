@@ -1,11 +1,7 @@
 ## the following function plots graph and saves it in plot4.png file.
-## example to run this script
-## source("plot4.R")
-## plot4()
 ## Note that it may take some time as to complete the reading and plotting the graph
 ## The file household_power_consumption.txt is assumed to be in the working directory!
 
-plot4 <- function() {
   library(dplyr)
   
    datafile <- "./household_power_consumption.txt"
@@ -69,5 +65,3 @@ axis(1, at=day1, labels="Thu"); axis(1, at=day2, labels="Fri"); axis(1, at=day3,
 dev.off() ## closing the device
 print("plot is saved in plot4.png file!")
 rm(list=ls())
-## now the plot1.png file containing histogram must have been created.
-}
